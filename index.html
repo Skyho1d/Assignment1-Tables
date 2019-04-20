@@ -1,85 +1,257 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>table</title>
-  <style>
-  table,td{border: 1px solid black; text-align: center; font-style: oblique; padding: 5px;}
-  table{background-color: #f1f1c1;}
-  thead td{width: 100px; color: white; background: black;} 
+	<title>blog</title>
+	<style>
+	*{box-sizing: border-box;}
 
-  td, tr {
-    cursor: pointer;
-    padding: 10px;
+	header {height: 350px;
+		background-image: url(http://themefunction.com/html/eventime/images/banner/banner3.jpg);
+		background-repeat: no-repeat;
+		width: 100%;
+		overflow: hidden;
+		margin: auto;}
+	header a{text-transform: uppercase;
+ color: white;
+ font-size: 16px;
+ width: 100%;
+ margin: auto;
+ overflow: hidden;
+text-decoration: none;
+ margin-right: 16px;
+ } 
+ .body{width: 75%; margin: auto;}
+ header a:hover{color: orange;}
+ .head {margin-top: 10px;
+ 	overflow: hidden;
+ 	margin-right: 100px;}
+ span { font-size: 36px;
+ 	overflow: hidden;
+ color: white;
+ font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;	
+ }
+header h2{font-family: 'Roboto', sans-serif;
+color:#fff;
+font-size: 30px;
+font-weight: 700;
+line-height: 36px;
+text-align: center;
+margin-top: 110px;
+margin-left: 10px; }
+
+a{text-decoration: none;}
+.hdli li{color: white; font-size: 16px; display: inline; padding:8px; }
+.hdli{list-style-type: square;
+text-align: center;}
+
+.sidebar{height: 1440px;
+width: 30%;
+margin-right: 50px;
+float: left; 
+clear: both;
+clear: both;}
+.recent-list a{color: black;}
+
+.cell li{border-bottom: 1px solid #dadada;
+    padding-bottom: 15px;
+    margin-bottom: 17px;
+    line-height: 30px;    display: list-item;
+   height: 81px; 
+
+   }
+
+.cell img{    margin-right: 15px;
+    width: 90px;
+    height: 65px;
+display: inline;} 
+.cell h4 {text-align: right; float: left; font-size: 14px;
+display: inline;}
+ .recent-list{list-style: none;}
+ .recent-list li h4{float: right;}
+ .categories {list-style: none;}
+ .categories li{color: black; 
+ 	border-radius: 0;
+ 	padding: 15px;
+ 	padding-left: 0px;
+ 	font-weight: 400;
+ 	border-bottom: 1px solid #ddd;}
+ 	.categories li:hover{color: #ff591d;}
+.side-head{font-size: 20px;
+    font-weight: 700;
     position: relative;
-}
+    margin-bottom: 40px;
+    margin-top: 0;
+    padding-bottom: 15px;
+    line-height: normal;
+    color: #303030;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 20px;
 
-  
- .html:hover {background: yellow;}
-  .htmllab:hover{background: gray;}
-  .css:hover{background: orange;}
-  .csc:hover{background: red;}
-  .deptmeeting:hover{background: blue;}
-  .Ecmeeting:hover{background: purple;}
-  td{font-size: 30px;}
-  caption{color: purple; text-align: center; font-style: bold; font-size: 50px;}
- 
+}
+.side-head:before{content: "";
+    position: absolute;
+    display: inline-block;
+    bottom: 0px;
+    width: 40px;
+    height: 3px;
+    left: 0;
+    z-index: 1;
+    background: #e84b11;
+}
+ h3.side-head{margin-top: 100px;}
+.right{margin-top: 50px;
+width: 63%;
+float: left;}
+.right img {width: 100%;}
+.right a {color: #303030;
+font-size: 24px;}
+a:hover{color:#e84b11;}
+.button p{background-color: #ea531c;
+border: 2px solid #00000000;
+color: white;
+padding-left: 8px;
+width: 20%;
+border-radius: 9px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 12px;
+    }
+    .button p:hover{background-color: #7c7c7c;}
+
+    
+    p{font-family: 'Droid Sans', sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    line-height: 24px;
+    font-size: 15px;
+    color: #7c7c7c;
+    font-weight: 500;}
+    .parg {border-bottom: 2px solid  #7c7c7c;
+    	margin-top: 50px;
+     }
 </style>
 </head>
-<body>
-<table>
-<CAPTION> Spring term 2019 communication department</CAPTION> <thead>
-  <tr>
-  <td></td>
-  <td>monday</td>
-  <td>tuesday</td>
-  <td>wednesday</td>
-  <td>tuesday</td>
-  <td>friday</td>
-  </tr>
-  </thead>
-   <tr>
-  <td>1:00pm</td>
-  <td rowspan="2" class="html">html</td>
-  <td></td>
-  <td rowspan="2" class="html">html</td>
-  <td rowspan="8" class="htmllab">html lab</td>
-  <td rowspan="2" class="html">html</td>
-  </tr>
-  <tr>
-  <td>3:00pm</td>
-  <td rowspan="2" class="deptmeeting">deptMeeting</td>
+<body> 
+	<header> <span> eventime </span> 
+		<div class="head"  style="float: right;">
+	<a href=""> home</a> 
+	<a href=""> speakers</a>
+	<a href="">schedule</a>
+	<a href="">venue</a>
+	<a href="">blog</a> 
 
-  </tr>
-  <tr>
-  <td>4:00 pm</td>
-  <td rowspan="3" class="css">css</td>
-  <td rowspan="3" class="css">css</td>
-  <td rowspan="3" class="css">css</td>
-  </tr>
-  <tr>
-  <td>5:00pm</td>
-  <td></td>
-  </tr>
-  <tr>
-  <td>7:00pm</td>
-  
-  <td rowspan="3" class="Ecmeeting">Ec meeting</td>
-  </tr>
-  <tr>
-  <td>9:00pm</td>
-  <td rowspan="3" class="csc">csc</td>
-  <td rowspan="3" class="csc">csc</td>
-  <td rowspan="3" class="csc">csc</td>
-  </tr>
-  <tr>
-  <td>10:00pm</td>
-  
-  </tr>
-  <tr>
-  <td>00:00am</td>
-  <td></td>
-  </tr>
-</table>
-<a href="page2.html">click in course for description</a>
+</div>
+<div>
+<h2>blog</h2>
+<ul class="hdli">
+	<li> HOME</li>
+	<li>/</li>
+	<li> BLOG</li>
+	<li></li>
+</ul>
+</div>
+</header>
+<div class="body">
+<div class="sidebar">
+	<div class="recent-posts">
+		<h3 class="side-head"> recent posts</h3>
+		<ul class="recent-list">
+			<!--first post-->
+			<li><div class="cell"><a href="k"><img src="http://themefunction.com/html/eventime/images/blog/blog4.jpg"></a>
+				<h4><a href="#">New Partnership Aims to Turn eSports Into Larger Public Events</a></h4>
+</div>
+
+
+			</li>
+			<li><div class="cell"><a href="k"><img src="http://themefunction.com/html/eventime/images/blog/blog4.jpg"></a>
+				<h4><a href="#">New Partnership Aims to Turn eSports Into Larger Public Events</a></h4>
+</div>
+
+
+			</li>
+			<li><div class="cell"><a href="k"><img src="http://themefunction.com/html/eventime/images/blog/blog4.jpg"></a>
+				<h4><a href="#">New Partnership Aims to Turn eSports Into Larger Public Events</a></h4>
+</div>
+
+			</li>
+			<li><div class="cell"><a href="k"><img src="http://themefunction.com/html/eventime/images/blog/blog4.jpg"></a>
+				<h4><a href="#">New Partnership Aims to Turn eSports Into Larger Public Events</a></h4></div>
+
+
+			</li>
+
+		</ul>
+
+		<div class="side-menu">
+		<h3 class="side-head"> categories</h3>		
+          <ul class="categories">
+          	<li>culture</li>
+          	<li>business</li>
+          	<li>social</li>
+          	<li>entertainment</li>
+          	<li>conference</li>
+          	
+          </ul>
+
+		</div>
+
+
+<div class="side-menu">
+		<h3 class="side-head"> Archives</h3>		
+          <ul class="categories">
+          	<li>Feburay 2016</li>
+          	<li>January 2016</li>
+          	<li>December 2015</li>
+          	<li>November 2015</li>
+          	<li>October 2015</li>
+          	
+          </ul>
+
+		</div>
+	</div>
+
+</div>
+
+<div class="right">
+	<div class="parg">
+	<img src="http://themefunction.com/html/eventime/images/blog/blog1.jpg">
+	<a href="#">See Eventime Creative Strategy to Tap Into New York City Marathon Buzz Station</a>
+	<p>See Eventime Creative Strategy to Tap Into New York City Marathon Buzz StationSee Eventime Creative Strategy to Tap Into New York City Marathon Buzz StationSee Eventime Creative Strategy to Tap Into New York City Marathon Buzz StationSee Eventime Creative Strategy to Tap Into New York City Marathon Buzz Station</p>
+	<a href="#" class="button"><p>continue reading</p></a>
+</div>
+
+
+<div class="parg">
+	<img src="http://themefunction.com/html/eventime/images/blog/blog1.jpg">
+	<a href="#">See Eventime Creative Strategy to Tap Into New York City Marathon Buzz Station</a>
+	<p>See Eventime Creative Strategy to Tap Into New York City Marathon Buzz StationSee Eventime Creative Strategy to Tap Into New York City Marathon Buzz StationSee Eventime Creative Strategy to Tap Into New York City Marathon Buzz StationSee Eventime Creative Strategy to Tap Into New York City Marathon Buzz Station</p>
+	<a href="#" class="button"><p>continue reading</p></a>
+</div>
+
+
+
+
+<div class="parg">
+	<img src="http://themefunction.com/html/eventime/images/blog/blog1.jpg">
+	<a href="#">See Eventime Creative Strategy to Tap Into New York City Marathon Buzz Station</a>
+	<p>See Eventime Creative Strategy to Tap Into New York City Marathon Buzz StationSee Eventime Creative Strategy to Tap Into New York City Marathon Buzz StationSee Eventime Creative Strategy to Tap Into New York City Marathon Buzz StationSee Eventime Creative Strategy to Tap Into New York City Marathon Buzz Station</p>
+	<a href="#" class="button"><p>continue reading</p></a>
+</div>
+
+
+
+</div>
+
+
+
+	
+
+</div>
+
+
+
+
+
 </body>
 </html>
